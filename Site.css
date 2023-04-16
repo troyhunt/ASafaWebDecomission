@@ -1,0 +1,1216 @@
+﻿/*! ASafaWeb CSS */
+/* Colours
+----------------------------------------------------------
+
+-- Layout --
+Off-white: #e2dbdb
+Body content background: #0C0C0C
+Title / footer / body background: #1F1E1E
+Page background: #3B3B3B
+Body font color: #9A9898
+
+-- Statuses --
+Red: #b4140e
+Yellow: #e19817
+Green: #467b2b
+Grey: #767676
+
+---------------------------------------------------------- */
+
+body
+{
+  background-color: #1F1E1E;
+  font: .8em Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #9A9898;
+}
+
+hr
+{
+  /*background-image: url(Images/RowStripe.png);*/
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAIAAADdv/LVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAFElEQVQYV2PYIsLH8HCGOINbtTYAFSsDU206uFwAAAAASUVORK5CYII=) repeat-x;
+  height: 3px;
+  border: none;
+  margin: 0;
+}
+
+a:link, a:visited, a:hover
+{
+  color: #747f89;
+}
+
+a:hover
+{
+  text-decoration: none;
+}
+
+p
+{
+  margin: 4px 0 20px 0;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+header, footer, nav, section
+{
+  display: block;
+}
+
+/* Headings
+----------------------------------------------------------*/
+h1, h2, h3, h4
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #9A9898;
+  letter-spacing: -1px;
+  font-weight: normal;
+}
+
+h1
+{
+  font-size: 1em;
+  color: #e2dbdb;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+h2
+{
+  padding-top: 15px;
+  font-size: 1.5em;
+  color: #4E5A65;
+}
+
+h3
+{
+  font-size: 1.25em;
+  padding: 0 0 3px 0;
+  margin-bottom: 0;
+}
+
+h4
+{
+  font-size: 1.25em;
+}
+
+/* Primary layout elements
+----------------------------------------------------------*/
+
+header
+{
+  margin-bottom: 0;
+  background-color: #3b3b3b;
+  padding: 0;
+}
+
+header, footer
+{
+  font-size: 0.845em;
+}
+
+.logo
+{
+  width: 221px;
+  height: 31px;
+  /* Logo.png */
+  background-image: url(Sprite.png);
+  background-position: -562px 0;
+}
+
+#title
+{
+  /*background-image: url(Images/RowShade.png);*/
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAICAYAAAA4GpVBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAMElEQVQYV2Pg5+dvYODj4y1l4OHhSWPg4uIKYeBg53BgYGVl1WFgZmaWYmBkZOQGAE1qAwu9ITnhAAAAAElFTkSuQmCC) repeat-x;
+  padding: 40px 0 40px 0;
+}
+
+  nav, #title .content, #main .content, footer .content
+  {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px 0 15px;
+  }
+
+#main
+{
+  background-color: #0c0c0c;
+  background-image: url(ContentBackground.png);
+  padding-top: 25px;
+}
+
+  #main .content
+  {
+    padding-bottom: 15px;
+  }
+
+footer
+{
+  padding-bottom: 5px;
+}
+
+.column1 h2
+{
+  margin-right: 20px;
+}
+
+.column2 h2
+{
+  margin-left: 20px;
+}
+
+.column1, .column2
+{
+  width: 50%;
+  float: left;
+}
+
+  .column1 p
+  {
+    padding-right: 20px;
+  }
+
+  .column2 p
+  {
+    padding-left: 20px;
+  }
+
+.troyHuntProject
+{
+  text-align: center;
+}
+
+/* Nav container
+----------------------------------------------------------*/
+
+img.beta
+{
+  width: 89px;
+  height: 89px;
+  /* Beta.png */
+  background-image: url(Sprite.png);
+  background-position: 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+nav
+{
+  height: 30px;
+}
+
+  nav #SmallLogo
+  {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+  }
+
+/* Nav implementation
+----------------------------------------------------------
+The following was sourced from http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
+*/
+
+#nav
+{
+  list-style: none;
+  margin-bottom: 10px; /* Clear floats */
+  float: left;
+  width: 100%; /* Bring the nav above everything else--uncomment if needed.   position:relative;   z-index:5;   */
+  padding: 0;
+  margin-top: 0;
+}
+
+  #nav li
+  {
+    float: left;
+    margin-right: 17px;
+    position: relative;
+  }
+
+  #nav a
+  {
+    color: #9A9898;
+    display: block;
+    padding: 8px 5px 9px 5px;
+    text-decoration: none;
+  }
+
+    #nav a:hover
+    {
+      color: #e2dbdb;
+      background: #3B3B3B;
+    }
+
+    #nav a.parent, #nav li:hover a.parent
+    {
+      padding-right: 15px;
+      background-repeat: no-repeat;
+      background-position: right center;
+      /* MenuDown.png */
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHCAYAAAA8sqwkAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF5JREFUeNpi/P//PwMpgGX2zJlqQNoIiFcgiUcA8bnU9PRb6BqYgBgmqAal5aH0LWw2MCFJyiNpvIXLSTANt4FYEgnfJqThMxA/B2J7KP2ZkAYQeAjEbPicAwIAAQYALHgUtA5zbiYAAAAASUVORK5CYII=);
+    }
+
+  /*--- Drop down ---*/
+
+  #nav ul
+  {
+    background: #3B3B3B; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background: rgba(59, 59, 59, 0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style: none;
+    position: absolute;
+    left: -9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+    padding: 0;
+    margin: auto;
+  }
+
+    #nav ul li
+    {
+      float: none;
+    }
+
+    #nav ul a
+    {
+      white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+    }
+
+  #nav li:hover ul
+  {
+    /* Display the dropdown on hover */
+    left: 0; /* Bring back on-screen when needed */
+  }
+
+  #nav li:hover a
+  {
+    /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background: #1a1919;
+  }
+
+  #nav li:hover ul a
+  {
+    /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+  }
+
+  #nav li:hover ul li a:hover
+  {
+    /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background: #3B3B3B;
+  }
+
+/* Form layout elements
+----------------------------------------------------------*/
+
+fieldset
+{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend
+{
+  visibility: hidden;
+  display: none;
+}
+
+textarea
+{
+  min-height: 75px;
+}
+
+select
+{
+  border: 1px solid #ccc;
+  padding: 2px;
+  font-size: 1.2em;
+  color: #444;
+}
+
+input[type="button"], input[type="submit"], button
+{
+  /* ConfirmButton.png */
+  background-image: url(Sprite.png);
+  background-position: -326px 0;
+  background-color: transparent;
+  width: 117px;
+  height: 28px;
+  border: none;
+  color: #c2d2b9;
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 2px 8px;
+}
+
+  input[type="button"]:focus, input[type="button"]:hover, input[type="submit"]:focus, input[type="submit"]:hover, button:focus, button:hover
+  {
+    /* ConfirmButtonActive.png */
+    background-image: url(Sprite.png);
+    background-position: -444px 0;
+  }
+
+  button.cancel
+  {
+    /* Cancel.png */
+    background-image: url(Sprite.png);
+    background-position: -90px 0;
+    color: #fac6c9;
+  }
+
+    button.cancel:focus, button.cancel:hover
+    {
+      /* CancelButtonActive.png */
+      background-image: url(Sprite.png);
+      background-position: -208px 0;
+    }
+
+input[type="button"], input[type="submit"], button
+{
+  outline: none;
+}
+
+p input[type="submit"]
+{
+  margin-top: 10px;
+}
+
+fieldset input[type="text"], fieldset input[type="url"], fieldset input[type="password"], fieldset input[type="email"], .select
+{
+  background-color: #2d2b2b;
+  border-bottom: 1px solid #272424;
+  border-right: 1px solid #272424;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: -1px -1px 1px #0d0d0d;
+  -webkit-box-shadow: inset 1px 1px 0 #0d0d0d;
+  -moz-box-shadow: inset 1px 1px 0 #0d0d0d;
+  box-shadow: inset 1px 1px 0 #0d0d0d;
+  -pie-box-shadow: -1px -1px 1px #0d0d0d;
+  height: 27px;
+  font-size: 13px;
+  color: #9A9898;
+}
+
+fieldset input[type="text"], fieldset input[type="url"], fieldset input[type="password"], fieldset input[type="email"]
+{
+  width: 185px;
+  border: 0;
+  margin: 0 15px 0 0;
+  outline: 0;
+  padding: 0 10px;
+  font-weight: normal;
+  font-family: Verdana, sans-serif;
+}
+
+fieldset input[type="url"]
+{
+  width: 340px !important;
+}
+
+.select
+{
+  display: block;
+  position: relative;
+  width: 185px;
+  padding: 0 30px 0 11px;
+  /* DropDownListArrow.png */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAA40lEQVQ4T2P4//8/AzmYLE0gi4aSRmEhITchQcH/uLCUpGSvs7OzOBCzAjHcawxADru4mNgqbBrFREU/AOWLgdgCiLnRNTJraGjYY9Oor6d3Fqi4HogNsNkIspVLVkZmBrJmGRmZt0Dx2UAcCMRCINtgGBwdUA6jvr6+lqiIyCuYZjMzs/1QZ2oAaRZcGsF+lZWVbQVpVFRUvA/kTwFiNyDmRdYE8yfceqAAIxCLSUpIHLO1te0HslOAWAGImQhpBBkCcpIqELsCsR4Qc6JrwmYjzHYOoKQAKMCgrkB2FZgNChwA7C1hSKpVXUwAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  background-position: right;
+  line-height: 28px;
+}
+
+  .select select
+  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+  }
+
+  .select.short
+  {
+    width: 12px;
+  }
+
+  .select.timeZone
+  {
+    width: 440px;
+  }
+
+  .select span
+  {
+    display: block;
+  }
+
+fieldset input[type="email"]
+{
+  width: 250px;
+}
+
+.time
+{
+  display: inline-block;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, .focus
+{
+  background-color: #515151;
+}
+
+/* Confirm box
+----------------------------------------------------------*/
+
+.ui-dialog-buttonset
+{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+  .ui-dialog-buttonset button
+  {
+    margin: 0 10px 0 10px;
+  }
+
+/* Scan form
+----------------------------------------------------------*/
+
+.scanForm
+{
+  padding: 49px 0 49px 0;
+  text-align: center;
+  background-image: url(Images/ScanUrlGlow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+  .scanForm input
+  {
+    font-size: 1.6em;
+    vertical-align: top;
+  }
+
+    .scanForm input[type="url"]
+    {
+      border: none;
+      height: 51px;
+      line-height: 40px;
+      width: 400px;
+      /* ScanUrlBackground.png */
+      background-image: url(Sprite.png);
+      background-position: -917px 0;
+      padding: 0;
+      padding-left: 10px;
+      background-color: transparent;
+    }
+
+      .scanForm input[type="url"]:focus
+      {
+        border: 0;
+        outline: none;
+        outline-offset: 0;
+      }
+
+    .scanForm input[type="submit"]
+    {
+      /* ScanButtonBackground.png */
+      background-image: url(Sprite.png);
+      background-position: -784px 0;
+      width: 132px;
+      height: 51px;
+      border: none;
+      text-align: left;
+      font-weight: bold;
+      padding-left: 15px;
+      color: #e9f3e9;
+      background-color: transparent;
+      text-shadow: 2px 2px 3px #2f6b1e;
+    }
+
+  .scanForm .field-validation-error
+  {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+.scanLoading
+{
+  margin: 9px 0 0 15px;
+  width: 32px;
+  height: 32px;
+  display: none;
+  position: absolute;
+}
+
+.demoScanLoading
+{
+  margin-bottom: -3px;
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+/* Scorecard
+----------------------------------------------------------*/
+
+.scorecardSection button
+{
+  background-image: url(Sprite.png);
+  background-position: -408px -31px;
+  width: 76px;
+  color: #c2c2c2;
+}
+
+  .scorecardSection button:hover
+  {
+    background-image: url(Sprite.png);
+    background-position: -486px -31px;
+  }
+
+.scorecardSection.Pass button.PassButton,
+.content.scorecardReadOnly .scorecardSection.Pass button.PassButton:hover
+{
+  background-image: url(Sprite.png);
+  background-position: -250px -31px;
+  color: #c2d2b9;
+}
+
+  .scorecardSection.Pass button.PassButton:hover
+  {
+    background-image: url(Sprite.png);
+    background-position: -330px -31px;
+  }
+
+.scorecardSection.Fail button.FailButton,
+.content.scorecardReadOnly .scorecardSection.Fail button.FailButton:hover
+{
+  background-image: url(Sprite.png);
+  background-position: -91px -30px;
+  color: #fac6c9;
+}
+
+  .scorecardSection.Fail button.FailButton:hover
+  {
+    background-image: url(Sprite.png);
+    background-position: -170px -30px;
+  }
+
+h3.scorecard
+{
+  color: #e2dbdb;
+  font-size: 1.7em;
+  padding-bottom: 5px;
+  clear: both;
+  word-wrap: break-word;
+}
+
+#scorecardHeader
+{
+  display: none;
+}
+
+#score
+{
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+#newScorecard
+{
+  float: right;
+  display: none;
+}
+
+#passingRisks
+{
+  color: #467b2b;
+}
+
+#failingRisks
+{
+  color: #b4140e;
+  margin-left: 20px;
+}
+
+#scorecardFieldset .editor-label, #scorecardFieldset
+{
+  float: left;
+}
+
+  #scorecardFieldset .editor-label
+  {
+    font-size: 2em;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+
+  #scorecardFieldset input
+  {
+    font-size: 1.6em;
+  }
+
+    #scorecardFieldset input[type="url"]
+    {
+      border: none;
+      height: 51px;
+      line-height: 40px;
+      width: 400px !important;
+      /* ScanUrlBackground.png */
+      background-image: url(Sprite.png);
+      background-position: -917px 0;
+      padding: 0;
+      padding-left: 10px;
+      background-color: transparent;
+      color: #000000;
+    }
+
+      #scorecardFieldset input[type="url"]:focus
+      {
+        border: 0;
+        outline: none;
+        outline-offset: 0;
+      }
+
+#scorecardSharingUrl
+{
+  word-wrap: break-word;
+}
+
+/* Read only mode */
+
+.content.scorecardReadOnly #scorecardInstructions,
+.content.scorecardReadOnly fieldset,
+.content.scorecardReadOnly #step1Header,
+.content.scorecardReadOnly #step1Description,
+.content.scorecardReadOnly #step2Header,
+.content.scorecardReadOnly #step2Description,
+.content.scorecardReadOnly #step3Header,
+.content.scorecardReadOnly #step3Description,
+.content.scorecardReadOnly #shareScorecard
+{
+  display: none;
+}
+
+.content.scorecardReadOnly #scorecardHeader,
+.content.scorecardReadOnly #newScorecard
+{
+  display: block;
+}
+
+.content.scorecardReadOnly button
+{
+  cursor: default;
+}
+
+/* Table
+----------------------------------------------------------*/
+
+table
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+  table td, table th
+  {
+    text-align: left;
+    padding: 0 2px 0 2px;
+  }
+
+  table td
+  {
+    vertical-align: top;
+  }
+
+  table th
+  {
+    border-bottom: 1px solid #3B3B3B;
+    vertical-align: bottom;
+  }
+
+  table tfoot
+  {
+    border-top: 1px solid #3B3B3B;
+  }
+
+.scanRequests .responseBytes, .scanRequests .durationMs
+{
+  text-align: right;
+  padding-left: 8px;
+  white-space: nowrap;
+}
+
+.scanRequests .scanNumber
+{
+  text-align: right;
+  padding-right: 3px;
+  width: 5px;
+}
+
+.scanRequests .pageTitle
+{
+  padding-left: 8px;
+}
+
+/* Validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+  color: #b4140e;
+}
+
+.field-validation-valid
+{
+  display: none;
+}
+
+.input-validation-error
+{
+  border: 1px solid #b4140e;
+  background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+  font-weight: bold;
+  color: #b4140e;
+}
+
+.validation-summary-valid
+{
+  display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label
+{
+  margin: 1em 0 0 0;
+  font-weight: bold;
+}
+
+.display-field, .editor-field
+{
+  margin: 0.5em 0 0 0;
+}
+
+.nowrap
+{
+  white-space: nowrap;
+}
+
+.text-box
+{
+  width: 30em;
+}
+
+  .text-box.multi-line
+  {
+    height: 6.5em;
+  }
+
+.tri-state
+{
+  width: 6em;
+}
+
+/* Scan results
+----------------------------------------------------------*/
+
+.scanSummary h2
+{
+  color: #e2dbdb;
+  font-size: 1.7em;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Summary */
+
+.scanSummary
+{
+  margin-bottom: 42px;
+}
+
+.statusSummary span
+{
+  cursor: pointer;
+  padding: 5px 7px 5px 7px;
+  color: #e2dbdb;
+  font-size: 1.3em;
+  margin: 0 3px 8px 0;
+  display: inline-table;
+}
+
+.statusSummary .Fail, .logTable .Fail
+{
+  background-color: #b4140e;
+}
+
+.statusSummary .Pass, .logTable .Pass
+{
+  background-color: #467b2b;
+}
+
+.statusSummary .Warning, .logTable .Warning
+{
+  background-color: #e19817;
+}
+
+.statusSummary .NotTested, .logTable .NotTested
+{
+  background-color: #767676;
+}
+
+/* Result */
+
+.scanResult
+{
+  margin-bottom: 50px;
+  background-color: #1F1E1E;
+  padding: 20px 20px 1px 20px;
+  border-width: 5px;
+}
+
+.scanScheduleResult
+{
+  margin-bottom: 10px;
+  background-color: #1F1E1E;
+  padding: 5px;
+  border-width: 2px;
+}
+
+  .scanScheduleResult .actions
+  {
+    float: right;
+  }
+
+  .scanResult h3, .scanScheduleResult h3
+  {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding: 0 0 5px;
+  }
+
+  .scanScheduleResult h3
+  {
+    margin-bottom: 0;
+    color: #9A9898;
+  }
+
+  .scanScheduleResult p
+  {
+    margin: 0;
+  }
+
+.headerSummary, .footerSummary
+{
+  padding: 10px;
+  margin-bottom: 15px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAADUlEQVQYV2P4//+/IgAJHQMfEjME3AAAAABJRU5ErkJggg==);
+  font-size: 0.845em;
+  line-height: 1.7em;
+}
+
+.footerSummary
+{
+  margin: 0 0 45px 0;
+}
+
+  .footerSummary p
+  {
+    margin: 0;
+  }
+
+.scanSummary .headerSummary
+{
+  margin-top: 8px;
+}
+
+.socialShare
+{
+  margin-top: 15px;
+}
+
+  .socialShare .twitter-share-button, .socialShare div, .socialShare iframe
+  {
+    vertical-align: top !important;
+  }
+
+.moreReading
+{
+  clear: both;
+}
+
+div.Pass, div.Fail, div.Warning, div.NotTested
+{
+  border-style: solid;
+}
+
+/* Pass */
+
+h3 span.Pass.result
+{
+  color: #467b2b;
+}
+
+div.Pass
+{
+  border-color: #467b2b;
+}
+
+/* Warning */
+
+h3 span.Warning.result
+{
+  color: #e19817;
+}
+
+div.Warning
+{
+  border-color: #e19817;
+}
+
+/* Fail */
+
+h3 span.Fail.result
+{
+  color: #b4140e;
+}
+
+div.Fail
+{
+  border-color: #b4140e;
+}
+
+/* Not Tested */
+
+h3 span.NotTested.result
+{
+  color: #767676;
+}
+
+div.NotTested
+{
+  border-color: #767676;
+}
+
+/* Scorecard
+----------------------------------------------------------*/
+
+.scorecardSection h3
+{
+  float: left;
+}
+
+.scorecardSection .passFailButtons
+{
+  float: right;
+}
+
+.scorecardSection.Pass h3
+{
+  color: #467b2b;
+}
+
+.scorecardSection.Fail h3
+{
+  color: #b4140e;
+}
+
+/* Code formatting
+----------------------------------------------------------*/
+
+.xmlName, .htmlElementName
+{
+  color: #93c763;
+}
+
+.htmlServerSideScript
+{
+  color: #8c8cb4;
+}
+
+.xmlDelimiter, .htmlTagDelimiter
+{
+  color: #f1f2f3;
+}
+
+.xmlAttribute, .htmlAttribute
+{
+  color: #678cb1;
+}
+
+.xmlAttributeValue, .htmlAttributeValue
+{
+  color: #ec7600;
+}
+
+/* Misc
+----------------------------------------------------------*/
+
+.clear
+{
+  clear: both;
+}
+
+.error
+{
+  color: Red;
+}
+
+.logTable
+{
+  width: 100%;
+}
+
+/* JQuery UI
+----------------------------------------------------------*/
+
+.ui-widget-overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #aaaaaa url(images/SemiTransparentPixel.png) 50% 50% repeat-x;
+  opacity: .50;
+  filter: Alpha(Opacity=30);
+}
+
+.ui-dialog
+{
+  background-color: #1F1E1E;
+  padding: 20px 20px 1px 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #e19817;
+}
+
+.ui-dialog-titlebar
+{
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #e19817;
+}
+
+.ui-icon
+{
+  width: 16px;
+  height: 16px;
+  background-image: url(images/JQueryUIIcons.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+
+.ui-helper-clearfix:before, .ui-helper-clearfix:after
+{
+  content: "";
+  display: table;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span
+{
+  display: block;
+  margin: 1px;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+  position: relative;
+}
+
+.ui-dialog .ui-dialog-titlebar-close
+{
+  height: 18px;
+  margin: -10px 0 0;
+  padding: 1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 19px;
+}
+
+.ui-icon-closethick
+{
+  background-position: -96px -128px;
+}
+
+.ui-dialog-content
+{
+  text-align: justify;
+}
+
+/* Printing
+----------------------------------------------------------*/
+
+@media print
+{
+  header, img.beta, .footerSummary, #newScorecardButton
+  {
+    display: none;
+  }
+
+  #title
+  {
+    padding: 0;
+  }
+
+  .headerSummary
+  {
+    padding: 0;
+    background-image: none;
+  }
+
+  body, h1, h2, h3, h4, a:link, a:visited
+  {
+    color: #000000;
+  }
+
+  .statusSummary span
+  {
+    padding: 10px 5px 10px 5px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    margin: 10px 10px 0 0;
+  }
+
+  .statusSummary .Fail
+  {
+    color: #b4140e;
+    border-color: #b4140e;
+  }
+
+  .statusSummary .Pass
+  {
+    color: #467b2b;
+    border-color: #467b2b;
+  }
+
+  .statusSummary .Warning
+  {
+    color: #e19817;
+    border-color: #e19817;
+  }
+
+  .statusSummary .NotTested
+  {
+    color: #767676;
+    border-color: #767676;
+  }
+}

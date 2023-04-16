@@ -1,0 +1,74 @@
+﻿==================================================================
+https://keybase.io/troyhunt
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://asafaweb.com
+  * I am troyhunt (https://keybase.io/troyhunt) on keybase.
+  * I have a public key with fingerprint 78BA 604B 30AA B4DF 818D  BB64 01E3 4D93 E69D 9BDA
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01017fedfc357756606db15d530dd20ec1ddc6407553fe511a599583a9aa4cb60c760a",
+            "fingerprint": "78ba604b30aab4df818dbb6401e34d93e69d9bda",
+            "host": "keybase.io",
+            "key_id": "01e34d93e69d9bda",
+            "kid": "01017fedfc357756606db15d530dd20ec1ddc6407553fe511a599583a9aa4cb60c760a",
+            "uid": "5b1e99759dd653ea52eb577310f59019",
+            "username": "troyhunt"
+        },
+        "revoke": {
+            "sig_ids": [
+                "225b432e697ddadaf39307b68840bdbca4f28e27c3cd664e20b21dc007ed86e40f"
+            ]
+        },
+        "service": {
+            "hostname": "asafaweb.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1453900990,
+    "expire_in": 157680000,
+    "prev": "18f241a1775f7b6cedee624b1a553777c06f9c6b35b3d7822d90467778ea43b1",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMJsAnicrZJdaBxVGIYn2601q4ZASyxaCI6mJTUN58yZ87etIqgXgSrYVrE/uj1/
+k4xJdjYzsxuXbUVNUSjaH3slESxqJQgxgiIt2LRKG0IjFIpGL0LjRVulUFtFL6SL
+eCbEK2+dm8Oc837P937vOefuWeEUWhprHssf3dDWaJn7+o+q89zEuemGKyNdd4sN
+d9AsLWZImyQtDYbaLboAAkgDowOFMKWYEEC0hFhjBLT2gFFQa0V8QDFGgcEQCsw5
+ZkhwIXwlCVCUAOH2uEFY7jdxJQ7LqcVSJgUBvkRACOnrgEGmpbQcaJCvOTKEay51
+VjgQJVmFNSdFYnrDyO7Zn9Kyvf/o/2ff1SUcltBwTjHXmmBkBPaMtFwEQYA5gDwT
+JiYui2Fj1Wkc1QeqdtD9PW5satGgyXJNwn5rOnGLu13Pw9JHnnVNtRZaBIgjQCVh
+zAdSSyX8wGPGowopTYhvPCA9qBUA1GhGjA8C9wXLth1roVqCZyktdxeJCMSokb0q
+Gra+KnGURioasicDaVpJipmrtF7JpFZVWoaUZFjW9o5sRc3ESRiV3SK0SpWGGRX6
+GHEAOAc9rnm5EsamFGYKTAkD9sv6mJpFQhZ4PhTQhh7YiZTRxhDPlzZgjCilCpCA
+KyIRlkhT5nmaA5/YA2aEjyR0s7FGypFlM+tT9FumTa4s0mps3P3fnN2Td1oKzh0r
+c9njdQqt7f8+6S/vu9P5isvm6ouvn/9k4nDur42j+9iJvW8+3X5Kt26d+qi/b8dv
+B6+NnUSd+XcOV8dWvnfjUOeqh384oUpdxx7acf9nMyNvHzo+v3DmUlO8dWR7+9Gr
+/hMjUzMPrHvt0fz7m0afmhyap28sOotffLquo+vG7PjCxg5++3Qfm2iMd73UOnL9
+zM83C7NXXjVH/t5GDHvwZnDpw9yLzeebsPu7+d9Pb9lV3/JuvXPtbvZnQDrad6LL
+2/t23m6bu775lcnjv4zt/Xhq+NsDd2/OtUy30Vvd2/Zdzt31+MFn1XR+5tiT6w84
+Wz+4uKe1sLBi9YZdk1eYP1eqPVL8/Hvnmd57fy2nP16Y7V4/HjcXo5/+AQhSUlw=
+=V/AT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/troyhunt
+
+==================================================================
